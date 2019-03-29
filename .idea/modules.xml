@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/alekseytitov99.github.io.iml" filepath="$PROJECT_DIR$/.idea/alekseytitov99.github.io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wordcount/wordcount.iml" filepath="$PROJECT_DIR$/wordcount/wordcount.iml" />
     </modules>
   </component>
 </project>
