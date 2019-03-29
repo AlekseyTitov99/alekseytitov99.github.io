@@ -22,8 +22,9 @@ public class WordCount {
             PrintWriter print = new PrintWriter("output.txt");
 
             print.println("Total word count: " + sortedLyrics.size());
+            print.println("-------------------------------");
             for (String word : sortedLyrics.keySet()) {
-                print.println(word + " " + sortedLyrics.get(word));
+                print.printf("Word: %-10s Count: %s\n", word,  sortedLyrics.get(word));
             }
             print.flush();
 
