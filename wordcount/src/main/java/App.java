@@ -13,19 +13,19 @@ public class App {
 
     public static void main( String[] args ) throws FileNotFoundException, java.io.IOException  {
         final FrequencyAnalyzer frequencyAnalyzer = new FrequencyAnalyzer();
-        frequencyAnalyzer.setWordFrequenciesToReturn(300);
-        frequencyAnalyzer.setMinWordLength(2);
+        frequencyAnalyzer.setWordFrequenciesToReturn(500);
+        frequencyAnalyzer.setMinWordLength(3);
 
 
         final java.util.List<WordFrequency> wordFrequencies = frequencyAnalyzer.load("song.txt");
 
-        final Dimension dimension = new Dimension(600, 300);
+        final Dimension dimension = new Dimension(438, 171);
         final WordCloud wordCloud = new WordCloud(dimension, CollisionMode.PIXEL_PERFECT);
         wordCloud.setPadding(2);
-        wordCloud.setBackground(new PixelBoundryBackground("queen.png"));
+        wordCloud.setBackground(new PixelBoundryBackground("work.png"));
         wordCloud.setFontScalar(new LinearFontScalar(4, 10));
-        wordCloud.setBackgroundColor(new Color(0xFFFFFF));
-        wordCloud.setColorPalette(new ColorPalette(new Color(0xAA0000), new Color(0xFFFFFF)));
+        wordCloud.setBackgroundColor(new Color(0xC0C0C0));
+        wordCloud.setColorPalette(new ColorPalette(new Color(0x000000), new Color(0xFFFFFF)));
 
 
         wordCloud.build(wordFrequencies);
